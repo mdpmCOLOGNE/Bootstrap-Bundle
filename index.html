@@ -23,22 +23,31 @@
   <body>
     <!-- Start your project here-->
     <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-        <div class="text-center">
-          <img
-            class="mb-4"
-            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
-            style="width: 250px; height: 90px"
-          />
-          <h5 class="mb-3">Thank you for using our product. We're glad you're with us.</h5>
-          <p class="mb-3">MDB Team</p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="https://mdbootstrap.com/docs/standard/getting-started/"
-            target="_blank"
-            role="button"
-            >Start MDB tutorial</a
-          >
+      <div class="row mt-5">
+        <div class="col">
+          <div class="dropdown">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              id="country"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Land auswählen
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="country">
+              <li><a class="dropdown-item" href="#"><i class="flag flag-de"></i> Deutschland (+49)</a></li>
+              <li><a class="dropdown-item" href="#"><i class="flag flag-at"></i> Österreich (+43)</a></li>
+              <li><a class="dropdown-item" href="#"><i class="flag flag-pl"></i> Poland (+48)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col text-end">+49</div>
+        <div class="col-9">
+          <div class="form-outline col-4">
+            <input type="tel" id="typePhone" class="form-control" />
+            <label class="form-label" for="typePhone">Phone number input</label>
+          </div>
         </div>
       </div>
     </div>
